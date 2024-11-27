@@ -1,0 +1,463 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS FONTS */
+body{
+    font-family: "Playfair Display", serif;
+    background-color: #231d5b;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0,8rem;
+    background-color: #000131 ;
+    border-bottom: 5px #15222C solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    font-family: "Bona Nova SC", serif;
+}
+
+.navbar .logo{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.navbar .logo a{
+    margin-left: 2rem;
+    font-weight: 700;
+    color: #ff0000;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav a{
+    display: inline-block ;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    color: #ff0000;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-size: large;
+}
+/* CSS ICON*/
+.menu {
+color: #ff0000;
+cursor: pointer;
+
+}
+/* CSS OUTLINE */
+.hero-section{
+    display: flex;
+   position: relative;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.hero-section::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 55%;
+    background-image: url(latar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section .content{
+    margin-left: 6rem;
+    width: 40%;
+    position: relative;
+}
+
+.hero-section .content h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hero-section .content p
+{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* CSS BOX MODEL */
+.hero-section .content button{
+    font-size: 1rem;
+    color: #ff0000;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    border: rgb(32, 23, 23);
+    background-color: #181834;
+    border-radius: 10px;
+    padding: 5px 12px 5px 12px;
+    cursor: pointer;
+    
+}
+
+.hero-section .picture{
+    width: 25rem;
+    margin-right: 10rem;
+}
+
+.about{
+    background-image: url(1080x0.webp);
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    
+}
+
+.about .about-tittle{
+    justify-content: center;
+    color: #ffffff;
+    font-size: 5rem;
+    padding-top: 5rem;
+    padding-left: 6rem;
+}
+
+.about .about-tittle p{
+    font-weight: 700;
+    width: 40%;
+    
+}
+
+.about .about-content{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-content .about-content1{
+    font-weight: 900;
+    font-size: large;
+    margin-right: 2rem;
+}
+
+.about .about-content .about-content1 p{
+    font-weight: 900;
+    color: #fff;
+    width: 85%;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.product{
+    background-color: #0f0042;
+    margin-top: 0;
+    padding-top: 5rem;
+ 
+}
+
+.product .product-tittle{
+    margin-left: 6rem;
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 55%;
+    color: #ffffff;
+    margin-bottom: 5rem;
+}
+
+.product .product-container{
+    display: flex;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+}
+
+.product-image{
+    margin-left: 5rem;
+}
+
+.product-image img{
+    width: 200px;
+    border-radius: 10%;
+    height: auto;
+}
+
+
+/* CSS LIST */
+.product-list {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .product-list h1 {
+    font-size: 24px;
+    color: #ff3f3f;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: circle;
+  }
+  
+  .product-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #004a02;
+  }
+  
+  .product-item h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  
+  .product-item p {
+    font-size: 15px;
+    color: #ff0000;
+  }
+
+  /* CSS TABLE */
+
+  .price-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #003a1f;
+    box-shadow: 0 4px 8px rgb(4, 1, 47);
+    color: rgb(245, 244, 244);
+  }
+  
+  .price-table thead {
+    background-color: #00004c;
+    color: #ff0000;
+  }
+  
+  .price-table th, .price-table td {
+    padding: 1rem;
+    text-align: center;
+      }
+  
+  .price-table th {
+    font-size: 2rem;
+  }
+  
+  .price-table td {
+    font-size: 1rem;
+    color: #f7cccc;
+  }
+  /*CSSLINK*/
+
+  a:link {
+    color: #110000;
+    text-align: center;
+    padding: 10px
+    
+}
+
+.row {
+    display: flex;
+
+}
+.sidebar {
+    background-color: #0f0042;
+    color: #ff0000;
+    justify-content: center;
+    text-align: center;
+    margin-top: auto;
+    flex: 1;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    max-width: 300px;
+    height: 600px;
+}
+
+  .content-yt {
+    width: 300px;
+    height: 500px;
+  }
+ 
+  
+  .artikel {
+    justify-content: center;
+    color: #ff0000;
+    text-align: center;
+    background-color: #0f0042;
+    width: 100%;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20240103/pngtree-close-up-view-of-dark-indigo-blue-cotton-jeans-denim-with-image_13897803.png);
+  }
+  .ourblog {
+    padding: 10px 0 0 0;
+}
+
+.ourblog h2 {
+    padding: 3rem 7% 1.4rem;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-size: 3rem;
+}
+
+.ourblog h2::after {
+    content: "";
+    height: 4px;
+    width: 90px;
+    background-color: rgba(104, 11, 64, 0.8);
+    display: block;
+    margin: auto;
+}
+
+.ourblog h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.ourblog .box-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    row-gap: 50px;
+}
+
+.ourblog .box-blog .box {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.ourblog .box-blog .box:hover {
+    transform: translateY(-10px);
+}
+
+.ourblog .box-blog .box img {
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.ourblog .box-blog .box p {
+    font-weight: 80;
+    margin-bottom: 20px;
+}
+
+.ourblog .box-blog .box button a{
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: rgba(12, 0, 87, 0.8);
+    color: #ff0000;
+    border-radius: 0.5rem;
+    padding: 12px 30px;
+    font-weight: 100;
+}
+
+.ourblog .box-blog .box button:hover a{
+    background-color: rgb(168, 98, 98);
+    transition: all 0.3s ease;
+}
+.container-contact {
+   padding: 30px 0 80px 0;
+    background-color: #0f0228;
+}
+
+.title-contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: rgb(240, 49, 49);
+}
+
+.title-contact h2::after {
+    content: "";
+    height: 4px;
+    width: 90px;
+    background-color: rgba(20, 11, 80, 0.8);
+    display: block;
+    margin: auto;
+}
+
+.box-contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.card-ct {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 20px;
+    padding: 5px 5px;
+    background-color: rgb(12, 0, 52);
+    border-radius: 50px;
+}
+
+.card-ct .card-icons {
+    font-size: 30px;
+    margin-bottom: auto;
+    color: #fbedf5;
+}
+
+.card-ct .card-icons a{
+    color: #fbedf5;
+}
+
+.card-ct .card-icons a:hover{
+    color: #ffffff;
+}
+
+.card-ct p {
+    font-size: 30px;
+    margin-bottom: 18px;
+    line-height: 1.5;
+    color: #fbedf5;
+}
+footer {
+    background-color: #01002a;
+    color: #ca0000;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 16px;
+  }
